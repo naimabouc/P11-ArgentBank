@@ -24,7 +24,7 @@ const Signin = () => {
       const token = userData.body.token;
       // Envoie du token à Redux pour authentifier l'utilisateur
       await dispatch(loginUser(token));
-      
+      navigate("/user");
       // Stockage du token dans localStorage si "Remember me" est coché
       if (rememberMe) {
         localStorage.setItem('token', token);

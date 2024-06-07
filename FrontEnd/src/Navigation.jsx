@@ -1,5 +1,5 @@
 import logo from "../public/argentBankLogo.png";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, Navigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { logoutUser } from "./redux/loginSlice";
 
@@ -14,7 +14,7 @@ const Navigation = () => {
     if (token) {
       console.log("le token est présent dans le store")
     } else {
-      console.log("le token n'est pas présent")
+      
     }
       // Fonction de gestion du clic sur le bouton de déconnexion
       const handleRedirectHome = () => {``
