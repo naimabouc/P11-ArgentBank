@@ -14,8 +14,8 @@ const User = () => {
     useEffect(() => {
         // Vérifie si userProfil est null ou undefined
         if (!userProfil) {
-            // Redirection vers la page d'accueil ou autre gestion si nécessaire
-            navigate("/"); // Exemple de redirection vers la page d'accueil
+            // Redirection vers la page d'accueil 
+            navigate("/"); 
         }
     }, [navigate, userProfil]);
 
