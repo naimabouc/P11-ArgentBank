@@ -1,11 +1,12 @@
 import { useState } from "react";
-import Button from "../Button";
+
 import { useNavigate } from "react-router-dom";
 
 //Variable pour manipuler le store redux
 import { useSelector, useDispatch } from "react-redux";
 import { infoUserName } from "../redux/loginSlice";
 import { modifyUsername } from "../api";
+import Button from "../Button";
 //Importation de la fonction pour le PUT
 
 

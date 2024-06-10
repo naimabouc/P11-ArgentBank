@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { logUser, getUserProfile, modifyUsername } from "../src/api";
+import { logUser, getUserProfile } from "./api";
 import { useNavigate } from "react-router-dom";
 import { useDispatch,} from "react-redux";
 import { loginUser,infoUser } from "./redux/loginSlice";
